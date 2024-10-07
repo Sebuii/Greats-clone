@@ -1,6 +1,7 @@
 .enkeftr {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   padding: 100px 0 65px 0;
+  background-color: red;
 }
 
 .footer {
