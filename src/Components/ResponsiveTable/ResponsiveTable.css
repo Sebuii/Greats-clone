@@ -1,0 +1,89 @@
+.table-responsive {
+    max-width: 100%; /* Maksimum genişlik %100 */
+    margin: 0 auto 0 auto; /* Ortala */
+    overflow-x: auto; /* Yatay kaydırma için */
+    padding: 20px; /* Kenar boşluğu */
+  }
+
+
+
+  .alttak{
+    display: flex;
+    justify-content: start;
+  }
+
+.ssma{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0 30px 0;
+}
+
+  .ssma3{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 15px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Kenarları birleştir */
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* İç boşluk */
+    text-align: left;
+    font-size: 16px; /* Standart yazı boyutu */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Başlık arka plan rengi */
+  }
+  
+  /* Medya Sorguları */
+  @media (max-width: 1200px) {
+    th, td {
+      font-size: 14px; /* Orta ekranlarda yazı boyutunu azalt */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 12px; /* Küçük ekranlarda yazı boyutunu daha da azalt */
+      padding: 10px; /* Küçük ekranlarda iç boşluğu azalt */
+    }
+
+    .ssma{
+        text-align: center;
+    }
+
+    .ssma3{
+        text-align: center;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      font-size: 10px; /* En küçük ekranlarda yazı boyutunu azalt */
+      padding: 8px; /* Daha küçük iç boşluk */
+    }
+  }
+  
+  @media (max-width: 350px) {
+    th, td {
+      font-size: 10px; /* Minimum yazı boyutunu sabit tut */
+      padding: 6px; /* Minimum iç boşluk */
+    }
+  }
+  
+  @media (max-width: 280px) {
+    th, td {
+      font-size: 8px; /* 280px ve altında yazı boyutunu daha da azalt */
+      padding: 4px; /* En küçük iç boşluk */
+    }
+  }
+  

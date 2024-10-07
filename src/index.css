@@ -1,0 +1,70 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Ozel Halvetica' , 'WT Kormelink'  ,'5 ci ozel font' ,'3 ci ozel font' , '2 ci ozel font' , 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.homepage{
+  overflow-x: hidden; /* Yatay taşmayı engeller */
+}
+
+.navmesafe{
+  margin-bottom: 90px;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Webkit tarayıcıları (Chrome, Safari) için kaydırma çubuğunu gizler */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: 'WT Kormelink';
+  src: url('./Assets/Fonts/WTKormelink-Roman.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ozel Halvetica';
+  src: url('./Assets/Fonts/HelveticaNeueMedium_9d147937-d8a1-4fba-a6fd-91bc9a38f8c7.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '2 ci ozel font';
+  src: url('./Assets/Fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '3 ci ozel font';
+  src: url('./Assets/Fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7\ \(1\).woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '5 ci ozel font';
+  src: url('./Assets/Fonts/yotpo-widget-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

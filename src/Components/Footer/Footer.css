@@ -1,0 +1,320 @@
+.enkeftr {
+  background-color: #f7f7f7;
+  padding: 100px 0 65px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto 100px auto;
+  gap: 200px;
+}
+.ftmain2 {
+  display: flex;
+  gap: 20px;
+}
+.ftdisp {
+  display: flex;
+  .prg2 {
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+}
+.prg2 {
+  width: 150px;
+  margin-bottom: 12px;
+}
+.prg3 {
+  color: black;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.ftmain1 {
+  max-width: 400px;
+  width: 100%;
+
+  .prg1 {
+    font-family: WT Kormelink;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(20, 20, 21);
+    margin-bottom: 10px;
+  }
+  .prg2 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    font-weight: 400;
+    width: 295px;
+    margin-bottom: 22px;
+  }
+  input {
+    width: 75.3%;
+    padding: 17px;
+    border-top-left-radius: 8px;
+    border-end-start-radius: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+  }
+
+  input::placeholder {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: arial;
+    color: rgb(0, 0, 0);
+  }
+
+  .input-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .input-container input {
+    flex: 1;
+    padding: 17px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial;
+  }
+
+  .input-container button {
+    padding: 17px;
+    background-color: black;
+    color: #fff;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    outline: none;
+    border: none;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.baslq {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.futicons {
+  display: flex;
+  gap: 8px;
+
+  a{
+    color: black;
+  }
+}
+.rightfut {
+  display: flex;
+  gap: 20px;
+  img {
+    width: 34px;
+    height: 34px;
+  }
+
+a{
+  color: black;
+}
+
+  .ozimg {
+    width: 35px;
+    height: 16.79px;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 400;
+  }
+
+  .spans {
+    display: flex;
+    gap: 20px;
+  }
+}
+.endy {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.triangle-icon {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    width: 90%;
+  }
+
+  .endy {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .footer {
+    width: 97%;
+    gap: 45px;
+  }
+
+  .endy {
+    width: 96%;
+  }
+}
+
+@media (max-width: 968px) {
+  .ftmain1 {
+    max-width: 350px !important;
+    width: 100%;
+    .prg2 {
+      width: 100%;
+      text-align: start;
+    }
+  }
+
+  .ftmain2 {
+    /* gap: 3.5%; */
+    .prg2 {
+      width: 110px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ftdisp {
+    /* .prg2 , .prg3 {
+      display: none; 
+    } */
+     display: none;
+  }
+
+  .newclass{
+    flex-direction: column;
+    display: block;
+  }
+
+  .mrgg{
+    margin-top: 30px;
+  }
+
+
+  .ftmain1 {
+    width: 100% !important;
+    max-width: 100% !important; /* max-width eklenerek sınırlama kaldırıldı */
+    /* background-color: red; */
+
+    .prg1 {
+      font-size: 28px;
+      width: 100% !important;
+      /* background-color: green; */
+    }
+
+    .prg2 {
+      width: 100%;
+    }
+  }
+
+  .endy {
+    width: 93%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+    width: 93%;
+    margin-bottom: 60px;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 20px;
+    input {
+      width: 100%;
+      border-radius: 8px;
+    }
+    button {
+      border-radius: 10px;
+    }
+  }
+
+  .takmak1 {
+    /* background-color: blue; */
+  }
+
+  .ftmain2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .picon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .baslq {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  .triangle-icon {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 2px 1px 1px 1px;
+    display: block;
+  }
+
+  .rightfut {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: end;
+
+    .spans {
+      flex-direction: column;
+      align-items: start;
+      margin-top: 16px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+    .spmimg {
+      text-align: end;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: end;
+      gap: 10px;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer,
+  .endy {
+    width: 92%;
+  }
+}

@@ -1,0 +1,82 @@
+.shipping-container{
+   
+    width: 90%;
+    margin: 0 auto 80px auto;
+}
+.head-p{
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+color: rgb(20, 20, 21);
+padding: 30px 0 10px 0;
+}
+
+.ship-box{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    border: 1px solid rgba(0, 0, 0, 0.148);
+    padding: 15px;
+    background-color: rgba(240, 240, 240, 0.458);
+    span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 16px;
+    }
+   
+}
+.ship-boxes{
+    display: grid;
+    gap: 15px;
+}
+
+.acdivi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.tukos{
+    width: 20px;
+    height: 20px;
+}  
+
+.sonrakispan {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 2s ease;
+  }
+  
+  .ship-box.open .sonrakispan {
+    max-height: 200px; 
+    opacity: 1;
+    margin-top: 20px;
+  }
+
+  .addbox{
+    margin-top: 20px;
+    cursor: initial;
+  }
+  
+
+  @media (min-width: 768px) {
+  
+    .shipping-container{
+    
+        width: 92%;
+    
+    }
+
+    .head-p{
+        font-size: 28px;
+    }
+
+}

@@ -1,0 +1,112 @@
+.slider-main {
+  margin: 70px 0 50px 0;
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 12%;
+  margin-bottom: 30px;
+}
+.sldr-yaz{
+  padding: 0 15px 0 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 80%;
+ margin: 0 auto;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 700;
+ font-size: 16px;
+ margin-bottom: 20px;
+}
+  .swiper-slide {
+    transform: translateX(160px); /* Swiper içeriğini sola kaydır */
+    display: flex; /* İçeriği ortalamak için */
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 294.2px; /* Başlangıç genişliği */
+      max-width: 130.78%; /* Genişlik orantılı şekilde küçülecek */
+      height: auto; /* Yükseklik genişliğe göre orantılı olacak */
+      aspect-ratio: 1/1; /* 1:1 orantısını koruyarak yüksekliği ayarla */
+      object-fit: cover; /* Resmin kırpılmadan düzgün gösterilmesini sağlar */
+    }
+  }
+
+
+
+  
+
+}
+
+@media (max-width: 1400px) {
+
+.slider-main .swiper-slide {
+  transform: translateX(100px); /* Swiper içeriğini sola kaydır */
+}
+
+.slider-main{
+  p{
+    margin-left: 10px;  
+  }
+  .sldr-yaz{
+    margin-left: 10px;
+    width: 98%;
+  }
+
+}
+
+}
+
+
+
+@media (min-width: 800px) {
+
+.slider-main .swiper-slide {
+  transform: translateX(80px); /* Swiper içeriğini sola kaydır */
+}
+}
+@media (max-width: 800px) {
+
+.slider-main .swiper-slide {
+  transform: translateX(80px); /* Swiper içeriğini sola kaydır */
+}
+}
+
+@media (max-width: 600px) {
+
+.slider-main .swiper-slide {
+  transform: translateX(-160px); /* Swiper içeriğini sola kaydır */
+}
+
+.slider-main{
+  p{
+    font-size: 14px;
+  }
+
+    .sldr-yaz{
+      font-size: 14px;
+    }
+  
+}
+
+}
+
+@media (min-width: 400px) {
+
+.slider-main .swiper-slide {
+  transform: translateX(-140px); /* Swiper içeriğini sola kaydır */
+}
+
+
+
+}
+
+
+@media (min-width: 250px) and (max-width: 400px) {
+  .slider-main .swiper-slide {
+    transform: translateX(60%); 
+  }
+}
+

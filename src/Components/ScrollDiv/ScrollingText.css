@@ -1,0 +1,37 @@
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgb(0, 0, 0);
+  padding: 5.8px 0;
+
+  position: fixed; 
+  top: 0; 
+  left: 0;  
+  z-index: 1000; 
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 32s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+.scrolling-text span {
+  display: inline-block;
+  margin-right: 60px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: white;
+}

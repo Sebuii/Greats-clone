@@ -1,0 +1,88 @@
+.need-help {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff; /* Beyaz arka plan */
+  /* padding: 25px 25px; */
+  padding: 15px 18px;
+  border-radius: 50%; /* Kenarları yuvarlat */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+  cursor: pointer; /* Fare ile üzerine gelindiğinde imleci el yap */
+  z-index: 999999;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+
+
+.iconsneedpg{
+    display: block;
+    display: flex;
+    justify-content: end;
+    padding: 0 17px;
+    font-size: 22px;
+}
+
+.needdivi {
+  position: fixed;
+  z-index: 99999999999;
+  width: 100%;
+  max-width: 450px;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-radius: 4px;
+
+
+  transform: translate(-50%, -50%);
+  top: 51%;
+  left: 50%;
+
+  p {
+    font-family: WT Kormelink;
+    line-height: 48px;
+    font-weight: 500;
+    font-size: 40px;
+    color: rgb(9, 58, 46);
+    text-align: center;
+  }
+
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(9, 58, 46);
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0 30px;
+  }
+
+  div {
+    max-width: 398px;
+    width: 100%;
+    background-color: rgb(9, 58, 46);
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    color: white;
+    padding: 18px 0;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+.need-help{
+display: none !important;
+}
+
+}

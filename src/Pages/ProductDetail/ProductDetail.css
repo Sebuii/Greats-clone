@@ -1,0 +1,300 @@
+.product-images img {
+  width: 100%; /* Ekran boyutuna göre genişliği yüzde ile ayarlar */
+  height: auto; /* Genişliğe bağlı olarak yüksekliği otomatik ayarlar */
+  /* max-width: 998px; F */
+  max-height: 998px;
+  margin-bottom: -3px;
+}
+
+.product-detail {
+  display: flex;
+  position: relative;
+  /* background-color: green; */
+  .color-options {
+    border: none;
+  }
+}
+
+.fordisplayblock {
+  display: none;
+}
+
+.two-rewievs {
+  background-color: #f7f7f7;
+  /* background-color: red; */
+  padding: 50px;
+  /* width: 97.4%; */
+  margin: 30px 0;
+}
+
+.descpd-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 15px 0;
+  color: rgb(20, 20, 21);
+}
+
+.whatmakep {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  color: rgb(20, 20, 21);
+}
+
+.yumrudaire {
+  background-color: rgb(20, 20, 21);
+  width: 2.5px;
+  height: 2.5px;
+  padding: 2.5px;
+  border-radius: 50%;
+}
+
+.desct-daire-disp {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-right-information {
+  position: sticky; /* Scroll ile hareket eder ama belirlenen sınırlar içinde kalır */
+  top: 13.2%; /* Yukarıya yapışır, scroll edildiğinde en üstte durur */
+  /* background-color: red; */
+  height: fit-content;
+  right: 0;
+  width: 100%;
+  max-width: 538px;
+  padding: 15px;
+}
+
+.product-inform-pages {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(128, 128, 128);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.inform-spans1 {
+  font: 400 34px "WT Kormelink", sans-serif;
+  line-height: 34px;
+  color: rgb(20, 20, 21); /* Renk ayrı bir özellik olarak belirtilir */
+}
+.inform-spans2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(20, 20, 21);
+}
+.prodc-infm-disp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.inform-color-font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.clasics {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(20, 20, 21);
+  text-transform: uppercase;
+  margin-top: 10px;
+  display: inline-block;
+}
+.find-your-size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 249px;
+  background-color: #1c1c1c;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  gap: 10px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  img {
+    width: 31px;
+    height: 30px;
+    filter: invert(100%);
+  }
+}
+.select-size {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(20, 20, 21);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .size-guides {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(20, 20, 21);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: initial;
+    margin-left: 5px;
+  }
+  .size-guides2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(20, 20, 21);
+    text-transform: initial;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.759);
+  }
+}
+
+.numbers-boxes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 83%;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.number {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(20, 20, 21);
+  background-color: #f7f7f7;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.new-add-clas {
+  background-color: black !important;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.product-button {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 0;
+  line-height: 1;
+  height: 56px;
+  background-color: rgb(184 184 185 / 50%);
+  box-shadow: none;
+  color: #141415;
+  border-radius: 10px;
+  margin-top: 12px;
+  cursor: no-drop;
+}
+
+.product-end-paragraf {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(20, 20, 21);
+  text-align: center;
+  margin: 15px;
+}
+
+@media (max-width: 1281px) {
+  .number {
+    width: 50px;
+    height: 50px;
+  }
+
+  .size-guides {
+    font-size: 10px !important;
+  }
+
+  .size-guides2 {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  /* .product-right-information {
+    max-width: 460px !important;
+  } */
+
+  /* .product-images img {
+    max-width: 530px; 
+    max-height: 530px; 
+  } */
+}
+
+@media (max-width: 768px) {
+  .fordisplayblock {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: initial !important;
+  }
+
+  .product-detail {
+    flex-direction: column-reverse;
+  }
+
+  .product-right-information {
+    width: 100% !important;
+    max-width: initial !important;
+    position: initial;
+    padding: 0;
+
+    .color-options {
+      display: block !important;
+    }
+  }
+
+  .product-images {
+    img {
+      width: 100% !important;
+      max-width: initial !important;
+      object-fit: cover;
+    }
+
+    .prodasecndimg {
+      display: none;
+    }
+  }
+
+  .inform-spans1 {
+    font-size: 28px !important;
+  }
+
+  .for-media-margin {
+    padding: 0 15px !important;
+  }
+
+  .prodasecndimg4 {
+    display: none !important;
+  }
+
+  .numbers-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 11px;
+  }
+
+  .inform-color-font {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,124 @@
+.divici {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: green;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+  }
+  
+  .text-overlay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    p{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    h2{
+        font-size: 38px;
+        font-family: WT Kormelink;
+        font-weight: 400;
+        margin-top: 3px;
+    }
+    button{
+        background-color: transparent;
+        padding: 12.5px 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Ozel Halvetica;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 255, 255);
+        width: 230px;
+    }
+    
+  }
+  
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1300px) {
+.text-overlay{
+    top: 82%;
+}
+  }
+  @media (max-width: 1024px) {
+.text-overlay{
+    top: 78%;
+}
+  }
+
+  @media (max-width: 850px) {
+    .text-overlay{
+        top: 74%;
+    }
+      }
+  
+
+  @media (max-width: 767px) {
+
+    .text-overlay{
+        top: 86%;
+    }
+
+    .divici {
+      width: 100%;
+      padding-bottom: 100%;
+    }
+  
+    .img {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 600px) {
+
+    .text-overlay{
+        top: 88%;
+    }
+
+    .divici {
+      padding-bottom: 170%;
+    }
+  }
+
+  @media (max-width: 540px) {
+
+.text-overlay{
+    h2{
+        font-size: 26px;
+    }
+}
+
+  }
+
+  @media (max-width: 400px) {
+
+    .text-overlay{
+        top: 85%;
+    }
+
+    .divici {
+      padding-bottom: 170%;
+    }
+  }
+
+  

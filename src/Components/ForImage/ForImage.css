@@ -1,0 +1,76 @@
+.for-container {
+  padding: 0;
+  width: 96%;
+  max-width: 1220px; /* Maksimum genişlik 1220px */
+  margin: 100px auto 70px auto;
+
+  .slider-header {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .slider-header p {
+    font-size: 35px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-pagination {
+    bottom: 10px;
+  }
+}
+
+.forimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; /* Kutu genişliği kadar */
+  height: auto; /* Orantılı yükseklik */
+  aspect-ratio: 285 / 370.5; /* Oranı koruma */
+}
+
+.foryazi {
+  text-align: center;
+  padding-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgb(20, 20, 21);
+}
+
+.forbox {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.forbox:hover .foryazi {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .for-container {
+    margin: 100px 0px 100px auto;
+
+    .slider-header {
+      padding-right: 30px;
+    }
+
+    .slider-header p {
+      font-size: 28px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .slider-header p {
+    font-size: 24px !important;
+  }
+}

@@ -1,0 +1,166 @@
+/* Video kapsayıcı */
+.video-container {
+  position: relative;
+  width: 100%;
+  /* height: 105vh; */
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Video ayarları */
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Yazı (overlay) */
+.overlay {
+  /* background-color: red; */
+  width: 88%;
+  position: absolute;
+  top: 75%; /* Sayfanın ortasına yerleştir */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Merkeze hizalamak için */
+  color: white; /* Yazı rengini beyaz yap */
+  /* font-size: 3rem;  */
+  z-index: 1; /* Yazıyı videonun önünde tutmak için */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  /* height: 90vh; */
+  h1 {
+    text-align: center;
+    /* background-color: red; */
+    font-size: 40px;
+    font-family: WT Kormelink;
+    line-height: 48px;
+    font-weight: 400;
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-family: Ozel Halvetica;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .overlay-butons {
+    /* background-color: green; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn{
+    background-color: black;
+    padding: 12.5px 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Ozel Halvetica;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 260px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .video {
+    height: 130vh;
+  }
+}
+@media (min-width: 375px) {
+  .overlay-butons {
+    button {
+      width: 230px !important;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .overlay {
+    width: 500px;
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+
+  .overlay-butons {
+    button {
+      cursor: pointer;
+      transition: background-color 0.9s ease-in-out; /* Arka plan renginin geçiş süresi */
+      position: relative;
+      overflow: hidden;
+    }
+    button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0, 0, 0); /* Başlangıçta yarı saydam bir renk */
+      transform: translateX(-100%); /* Soldan başlayacak */
+      transition: transform 1s ease-in-out; /* Soldan sağa geçiş animasyonu */
+    }
+
+    button:hover::before {
+      transform: translateX(100%);
+    }
+
+    button:hover {
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+  }
+  .overlay {
+    width: 60%;
+    margin: 0 auto;
+    /* height: 85vh; */
+    h1 {
+      font-size: 53px;
+      margin-bottom: 8px;
+    }
+  }
+  .overlay p {
+    width: 500px;
+  }
+  .overlay-butons {
+    display: flex;
+    flex-direction: row !important;
+  }
+}
+
+@media (max-width: 475px) {
+
+.overlay{
+  top: 70%;
+}
+
+}
+ @media (max-width: 768px) and (min-width: 475px) {
+
+.overlay{
+  top: 65%;
+}
+
+} 
+     

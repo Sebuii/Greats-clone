@@ -1,0 +1,62 @@
+.accesbilyt-container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 100%;
+    padding: 35px 15px;
+    margin: 0 auto;
+    img{
+        width: 130px;
+        height: 130px;
+    }
+
+.acces-paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(20, 20, 21);
+}
+
+.acces-span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    /* display: inline-block; */
+}
+
+
+
+
+
+.innnln{
+    display: inline-block !important;
+}
+
+}
+
+
+
+
+ @media (min-width: 768px) {
+
+    .accesbilyt-container{
+padding-top: 70px;
+
+    }
+
+.yoxolmalisan{
+    display: none;
+}
+        .acces-paragraph{
+font-size: 16px !important;
+        }
+
+
+        .acces-span{
+        font-size: 16px !important;
+        }
+
+} 

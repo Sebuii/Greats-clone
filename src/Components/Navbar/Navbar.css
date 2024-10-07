@@ -1,0 +1,250 @@
+.navbar-container {
+  background-color: rgb(255 255 255);
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.453);
+}
+.height-div {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 29.1px;
+  left: 0;
+  z-index: 999;
+}
+.navbar {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.acilaninputdivi {
+  padding-left: 10px;
+  position: fixed;
+  right: 60px;
+  background-color: white;
+  width: 500px;
+  height: 414px;
+  overflow-y: auto;
+  top: 90px;
+  border: 1px solid rgba(0, 0, 0, 0.081);
+}
+
+.inputpar {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9b9b9b;
+  font-weight: 600;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+.divsvgp {
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.acilaninputdivi::-webkit-scrollbar {
+  display: none; /* Webkit tabanlı tarayıcılar (Chrome, Safari, Edge) için scrollbar'ı gizler */
+}
+
+.inputdivikart {
+  /* background-color: blue; */
+  margin-bottom: 4px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.inputdivikart:hover {
+  background-color: rgba(221, 221, 221, 0.497);
+
+  .fontdiv {
+    color: rgba(0, 0, 0, 0.827);
+  }
+}
+
+.fontdiv {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: #666;
+}
+
+.inputmainn {
+  /* margin-top: 5px; */
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.colorinprc {
+  color: rgba(0, 0, 0, 0.786);
+}
+
+.navspanadd {
+  font-weight: 600 !important;
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.navbarnspanni:hover {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.cantareqem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17.5px;
+  height: 18.2px;
+  /* padding: 1.5px 5px 2px 5px; */
+  background-color: black;
+  color: white !important;
+  font-size: 11px !important;
+}
+
+img {
+  width: 110px;
+  height: 28.64px;
+}
+
+.navicons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+  input {
+    width: 126px;
+    border: none;
+    border-bottom: 2px inset rgba(59, 59, 59, 0.626);
+    outline: none;
+    display: none;
+  }
+  input::placeholder {
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: 400;
+    color: rgba(59, 59, 59, 0.396);
+    font-style: italic;
+  }
+  .profil-image {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+}
+
+.menu-links {
+  display: none;
+  img {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+.show {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+  position: absolute;
+  top: 63.5px;
+  left: 0;
+  width: 100%;
+  padding: 35px;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.892);
+  span {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .login {
+    /* background-color: red; */
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgba(20, 20, 21, 0.679);
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 767px) {
+  .login {
+    display: none;
+  }
+
+  .navicons {
+    input {
+      display: block;
+    }
+    .profil-image {
+      display: block;
+    }
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu-links {
+    img {
+      display: none;
+    }
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 15px 0 20px;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(36, 36, 37, 0.814);
+    }
+  }
+}
+@media (min-width: 901px) {
+  .menu-links {
+    margin-left: 35px;
+    span {
+      font-size: 16px;
+    }
+  }
+  .navicons {
+    input {
+      width: 198px;
+    }
+  }
+}
+@media (min-width: 1001px) {
+  .menu-links {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .acilaninputdivi {
+    right: 0px;
+    width: calc(100% - 20px); /* Sağdan ve soldan 20px boşluk bırakmak için genişliği ayarla */
+    margin: 0 10px; /* Sağdan ve soldan 20px boşluk bırak */
+  }
+}

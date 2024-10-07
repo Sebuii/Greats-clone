@@ -1,0 +1,156 @@
+.new-page {
+
+
+  .newpage-container {
+    width: 96%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+
+
+  .new-page-filterdiv {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 30px;
+    .nevars {
+      font-family: WT Kormelink;
+      font-size: 34px;
+      font-weight: 400;
+    }
+  }
+
+  .acilanfilterdivi{
+    /* background-color: green; */
+    /* padding-right: 150px; */
+    margin-right: 30px;
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  .baglaac{
+    p{
+      font-weight: 700;
+      border: none !important;
+    }
+  }
+
+.filterinocnu{
+  font-size: 14px;
+}
+
+
+  .acilanfilterdivi p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+    color: black;
+
+    border-bottom: 2px solid rgba(35, 35, 35, 0.307);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 10px 5px 10px 10px;
+    max-width: 100%;
+  }
+
+
+
+  .selected-color {
+    padding-top: 5px;
+    span {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(20, 20, 21, 0.725);
+    }
+  }
+
+  .newpage-kartlar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid rgba(54, 54, 54, 0.273);
+    padding: 7px 25px 9px 25px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .div-kart {
+    max-width: 385px;
+    border: 1px solid rgba(0, 0, 0, 0.053);
+    box-sizing: border-box;
+    flex: 1 1 calc(33% - 20px);
+    overflow: hidden; /* Görselin taşmasını önler */
+  }
+
+  .shoe-image {
+    width: 100%;
+    padding-bottom: 100%; /* Orantılı yüksekliği sağlamak için */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease; /* Hover geçiş efekti */
+  }
+
+  /* Kart içindeki diğer elementler */
+
+  @media (max-width: 991px) {
+    .div-kart {
+      max-width: 464px !important;
+      flex: 1 1 calc(43%);
+    }
+
+    .newpage-container {
+      width: 94%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .div-kart {
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+  }
+
+  .color-options,
+  .quickadd {
+    display: none;
+  }
+
+  .spn-disp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .kart-main {
+    padding: 15px 0 0 0 !important;
+  }
+
+  .acilanfilterdivi{
+display: none;
+  }
+
+}
+
+
+
+
