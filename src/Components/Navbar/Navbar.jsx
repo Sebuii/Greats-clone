@@ -33,11 +33,15 @@ function Navbar() {
 
   const [input, setInput] = useState("");
 
-  const [openli, setOpenli] = useState(false);
+  // const [openli, setOpenli] = useState(false);
+
+
 
   const tikla = () => {
     setOpen(!open);
   };
+
+
 
   const [canta, setCanta] = useState(false);
 
@@ -45,10 +49,33 @@ function Navbar() {
     setCanta(false);
   };
 
+
+
+
+
+
+
+
+
+
+
   const searctik = () => {
+
+
+
     console.log("qwdqwudj");
-    setOpenli(!openli);
+
+ 
+
+
   };
+
+
+
+
+
+
+
 
   const spantik = (name) => {
     console.log("dqwdqwdjiqwiodj");
@@ -75,12 +102,12 @@ function Navbar() {
             <div onClick={() => tikla()}>
               <HamburgerMenu className="navbar-line" />
             </div>
-            <Link to="/">
+            <Link onClick={() => setOpen(false)} to="/">
               <img src={Logo} alt="logo" loading="lazy" />
             </Link>
             <div className={`menu-links ${open ? "show" : ""}`}>
               {links.map((item, index) => (
-                <Link to={item.path} key={index}>
+                <Link onClick={() => setOpen(false)} to={item.path} key={index}>
                   <span
                     className={`navbarnspanni ${acspan === item.name ? "navspanadd" : ""}`}
                     onClick={() => spantik(item.name)}
@@ -95,14 +122,51 @@ function Navbar() {
                 </Link>
               ))}
               <div className="login">
-                <span>Login</span>
+
+
+              <Link onClick={() => setOpen(false)}  to={isLoggedIn ? "/profile" : "/login"}>
+              <span>Login</span>
+              </Link>
+
+
+
+                {/* <span>Login</span> */}
+
+
+
+
+
+
+
+                
+
+
+
+
+
+                <Link onClick={() => setOpen(false)} to="/shipping">
+                {" "}
                 <span>Customer Service</span>
+              </Link>
+
+
+
+
+
               </div>
             </div>
             <div className="navicons">
-              {<img onClick={() => searctik()} className="axtaris-icon" src={Axtaris} alt="search" loading="lazy" />}
 
-              <input placeholder="Search" type="text" value={input} onChange={inputatikla} />
+              
+
+
+
+
+              {<img onClick={() => searctik()} className="axtaris-icon" src={Axtaris} alt="search" loading="lazy" />}
+              <input  placeholder="Search" type="text" value={input} onChange={inputatikla} />
+
+
+
 
               {input && (
                 <ul className="acilaninputdivi">
@@ -140,7 +204,7 @@ function Navbar() {
                       </Link>
                     ))
                   ) : (
-                    <li>Yoxdur</li>
+                    <li>Not Found</li>
                   )}
                 </ul>
               )}
@@ -175,8 +239,7 @@ function Navbar() {
                 alt="bag"
                 loading="lazy"
               /> */}
-
-              <div onClick={() => setCanta(true)} style={{ position: "relative", display: "inline-block", cursor: "pointer" }}>
+              <div onClick={() => { setCanta(true); setOpen(false); }} style={{ position: "relative", display: "inline-block", cursor: "pointer" }}>
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     className="icon_bg"

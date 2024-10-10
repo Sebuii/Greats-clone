@@ -30,6 +30,16 @@
   border: 1px solid rgba(0, 0, 0, 0.081);
 }
 
+.navbarnspanni {
+  color: black;
+}
+
+.login{
+  a{
+    color: gray;
+  }
+}
+
 .inputpar {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -113,6 +123,10 @@ img {
   height: 28.64px;
 }
 
+.inputshowdisp{
+  display: block;
+}
+
 .navicons {
   display: flex;
   gap: 15px;
@@ -126,7 +140,11 @@ img {
     border: none;
     border-bottom: 2px inset rgba(59, 59, 59, 0.626);
     outline: none;
+
+
     display: none;
+
+    
   }
   input::placeholder {
     font-size: 16px;
